@@ -40,10 +40,11 @@ notify:
     token: [Smartthings API token]
 ```
 
+
 <br>
 
 ## 참고사이트
-[1] 네이버 HomeAssistant 카페 | af950833님의 [HA] 네이버 날씨 (<https://cafe.naver.com/stsmarthome/19337>)<br>
+[1] In development | 갤럭시 홈 미니 API로 말 시키기 (<https://5mango.com/speak-on-galaxy-home-mini-using-api/>)<br>
 
 [version-shield]: https://img.shields.io/badge/version-v1.0.0-orange.svg
 [hakc-shield]: https://img.shields.io/badge/HAKC-Enjoy-blue.svg

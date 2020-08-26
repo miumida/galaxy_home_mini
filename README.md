@@ -5,6 +5,10 @@
 ![Version v1.0.0][version-shield]
 
 Smartthings API를 이용한 Galaxy Cloud Speak Notify for Homeassistant입니다.<br>
+Smartthings API token을 발급받아야 사용가능합니다. 갤럭시 홈 또는 갤럭시 홈 미니 디바이스도 필요합니다.<br>
+
+- 개발자도구 > 서비스<br>
+![screenshot_1](https://github.com/miumida/galaxy_cloud_speak/blob/master/images/ha_dev_tool.png?raw=true)<br>
 
 <br>
 

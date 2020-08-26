@@ -42,7 +42,7 @@ message 길이는 최대 1000자 입니다.(한글 기준인지는 잘 모르겠
 ```yaml
 notify:
   - platform: galaxy_cloud_speak
-    name: galmini
+    name: galaxy_cloud_speak
     token: [Smartthings API token]
     device_id: [galaxy home mini deviceId]
 ```
@@ -56,6 +56,11 @@ notify:
 토큰 이름을 입력하고, 권한 범위에서 `장치를 전체 체크`하고 저장하면 토큰이 생성됩니다.<br>
 ![smartthings_token_2](https://github.com/miumida/galaxy_cloud_speak/blob/master/images/smartthings_token_2.png?raw=true)<br>
 생성된 토큰은 잘 복사해 둡니다.<br>
+
+<br>
+
+## Device ID
+생성한 token으로 갤럭시 홈 또는 갤럭시 홈 미니의 Device ID를 확인합니다.<br>
 
 <br>
 

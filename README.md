@@ -44,6 +44,10 @@ notify:
     token: [Smartthings API token]
 ```
 
+<br>
+
+## Smartthings API Token
+'<https://account.smartthings.com/tokens>' 사이트로 접속하여 token을 발급받습니다.<br>
 
 <br>
 

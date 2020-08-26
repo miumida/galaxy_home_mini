@@ -61,6 +61,10 @@ notify:
 
 ## Device ID
 생성한 token으로 갤럭시 홈 또는 갤럭시 홈 미니의 Device ID를 확인합니다.<br>
+'smartthins_devices.py'를 다운로드 받아 실행하여 device 목록을 확인한다.<br>
+```python
+python3 smartthins_devices.py {발급받은 토큰}
+```
 
 <br>
 

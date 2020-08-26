@@ -44,6 +44,7 @@ notify:
   - platform: galaxy_cloud_speak
     name: galmini
     token: [Smartthings API token]
+    device_id: [galaxy home mini deviceId]
 ```
 
 <br>

@@ -6,9 +6,11 @@
 
 Smartthings API를 이용한 Galaxy Cloud Speak Notify for Homeassistant입니다.<br>
 Smartthings API token을 발급받아야 사용가능합니다. 갤럭시 홈 또는 갤럭시 홈 미니 디바이스도 필요합니다.<br>
+TTS와는 다르며, cache 파일이 생성되지 않습니다. 네트워크가 끊어진 상태에서는 사용할 수 없습니다.<br>
 
 - 개발자도구 > 서비스<br>
 ![screenshot_1](https://github.com/miumida/galaxy_cloud_speak/blob/master/images/ha_dev_tool.png?raw=true)<br>
+message 길이는 최대 1000자 입니다.(한글 기준인지는 잘 모르겠습니다. Max Length 1000 이라고만 되어 있어서...)<br>
 
 <br>
 
@@ -47,7 +49,12 @@ notify:
 <br>
 
 ## Smartthings API Token
-'<https://account.smartthings.com/tokens>' 사이트로 접속하여 token을 발급받습니다.<br>
+'<https://account.smartthings.com/tokens>' 사이트로 접속하여 로그인합니다.<br>
+'새 토큰 만들기'를 눌러서 토큰을 생성합니다.<br>
+![smartthings_token_1](https://github.com/miumida/galaxy_cloud_speak/blob/master/images/smartthings_token_1.png?raw=true)<br>
+토큰 이름을 입력하고, 권한 범위에서 `장치를 전체 체크`하고 저장하면 토큰이 생성됩니다.<br>
+![smartthings_token_2](https://github.com/miumida/galaxy_cloud_speak/blob/master/images/smartthings_token_2.png?raw=true)<br>
+생성된 토큰은 잘 복사해 둡니다.<br>
 
 <br>
 

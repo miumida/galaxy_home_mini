@@ -31,7 +31,7 @@ message 길이는 최대 1000자 입니다.(한글 기준인지는 잘 모르겠
 - Home-Assistant 를 재시작합니다<br>
 ### HACS
 - HACS > Integretions > 우측상단 메뉴 > Custom repositories 선택
-- 'https://github.com/miumida/galaxy_cloud_notify' 주소 입력, Category에 'integration' 선택 후, 저장
+- 'https://github.com/miumida/galaxy_cloud_speak' 주소 입력, Category에 'integration' 선택 후, 저장
 - HACS > Integretions 메뉴 선택 후, galaxy_cloud_speak 검색하여 설치
 
 <br>

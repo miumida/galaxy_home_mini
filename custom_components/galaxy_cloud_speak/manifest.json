@@ -3,5 +3,6 @@
   "name": "Galaxy Cloud Speech",
   "documentation": "https://github.com/miumida/galaxy_cloud_speak",
   "requirements": [],
-  "codeowners": ["@miumida"]
+  "codeowners": ["@miumida"],
+  "version": "1.0.1"
 }

@@ -18,6 +18,7 @@ message 길이는 최대 1000자 입니다.(한글 기준인지는 잘 모르겠
 | Version | Date        | 내용              |
 | :-----: | :---------: | ----------------------- |
 | v1.0.0  | 2020.08.26  | First version  |
+| v1.0.1  | 2021.03.09  | manifest.json add version attribute.  |
 
 <br>
 
@@ -71,6 +72,6 @@ python3 smartthins_devices.py {발급받은 토큰}
 ## 참고사이트
 [1] In development | 갤럭시 홈 미니 API로 말 시키기 (<https://5mango.com/speak-on-galaxy-home-mini-using-api/>)<br>
 
-[version-shield]: https://img.shields.io/badge/version-v1.0.0-orange.svg
+[version-shield]: https://img.shields.io/badge/version-v1.0.1-orange.svg
 [hakc-shield]: https://img.shields.io/badge/HAKC-Enjoy-blue.svg
 [hacs-shield]: https://img.shields.io/badge/HACS-Custom-red.svg

@@ -51,7 +51,7 @@ class GalaxyCloudSpeechNotificationService(BaseNotificationService):
         }
 
 
-    async def send_message(self, message="", **kwargs):
+    async def async_send_message(self, message="", **kwargs):
         """Send a message to specified target."""
         websession = async_get_clientsession(self.hass)
 
@@ -60,7 +60,7 @@ class GalaxyCloudSpeechNotificationService(BaseNotificationService):
 
         try:
 
-            with async_timeout.timeout(10):
+            with async_timeout.timeout(30):
 
                 data = {
                     "commands": [

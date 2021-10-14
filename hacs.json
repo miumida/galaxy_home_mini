@@ -1,6 +1,6 @@
 {
-  "name": "[KR] Galaxy Cloud Speak Notify",
+  "name": "[KR] Galaxy Home Mini Service",
   "country": "KR",
-  "domains": ["notify"],
+  "domains": ["service"],
   "render_readme": true
 }

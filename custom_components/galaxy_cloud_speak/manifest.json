@@ -1,8 +1,0 @@
-{
-  "domain": "galaxy_cloud_speak",
-  "name": "Galaxy Cloud Speech",
-  "documentation": "https://github.com/miumida/galaxy_cloud_speak",
-  "requirements": [],
-  "codeowners": ["@miumida"],
-  "version": "1.0.2"
-}

@@ -9,7 +9,7 @@ from homeassistant.core import callback
 from homeassistant.const import (CONF_SCAN_INTERVAL)
 from homeassistant.helpers.aiohttp_client import async_create_clientsession
 
-from .const import DOMAIN, CONF_ACCESS_TOKEN, CONF_DEVICE_ID, SMARTTHINGS_API_URL
+from .const import DOMAIN, CONF_ACCESS_TOKEN, CONF_DEVICE_ID, SMARTTHINGS_API_URL, SMARTTHINGS_API_CALL_URL
 
 _LOGGER = logging.getLogger(__name__)
 

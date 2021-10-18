@@ -17,7 +17,7 @@ from homeassistant.helpers.aiohttp_client import async_get_clientsession
 
 from homeassistant.helpers import discovery
 
-from .const import DOMAIN, CONF_ACCESS_TOKEN, CONF_DEVICE_ID
+from .const import DOMAIN, CONF_ACCESS_TOKEN, CONF_DEVICE_ID, SMARTTHINGS_API_CALL_URL
 
 _LOGGER = logging.getLogger(__name__)
 

@@ -23,6 +23,7 @@ message 길이는 최대 1000자 입니다.(한글 기준인지는 잘 모르겠
 | v1.0.2  | 2021.05.03  | bug Fix.  |
 | v1.1.0  | 2021.10.15  | rename Component.(galaxy_cloud_speak -> galaxy_home_mini) |
 | v1.1.1  | 2021.10.18  | bug Fix. |
+| v1.1.2  | 2021.10.18  | bug Fix. |
 
 <br>
 
@@ -70,6 +71,6 @@ python3 smartthins_devices.py {발급받은 토큰}
 [1] In development | 갤럭시 홈 미니 API로 말 시키기 (<https://5mango.com/speak-on-galaxy-home-mini-using-api/>)<br>
 [2] 네이버 HomeAssistant 카페 | 우기네님의 HA 에서 갤홈 미니로 명령 보내기 (<https://cafe.naver.com/koreassistant/6514>)<br>
 
-[version-shield]: https://img.shields.io/badge/version-v1.1.1-orange.svg
+[version-shield]: https://img.shields.io/badge/version-v1.1.2-orange.svg
 [hakc-shield]: https://img.shields.io/badge/HAKC-Enjoy-blue.svg
 [hacs-shield]: https://img.shields.io/badge/HACS-Custom-red.svg

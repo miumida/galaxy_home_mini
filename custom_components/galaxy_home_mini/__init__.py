@@ -1,6 +1,7 @@
 import requests
 import logging
 import asyncio
+import aiohttp
 import json
 import base64
 
@@ -20,7 +21,7 @@ _LOGGER = logging.getLogger(__name__)
 
 
 def base_config_schema(config: dict = {}) -> dict:
-    """Return a shcema configuration dict for HA-Connector."""
+    """Return a shcema configuration dict for Galaxy Home Mini."""
     if not config:
         config = {
             CONF_ACCESS_TOKEN: "xxxxxxxxxxxxxxxxxxxxxxxxxxx",
@@ -96,8 +97,7 @@ async def async_setup_entry(hass, config_entry):
                 if request.status != HTTP_OK:
                     _LOGGER.error( "Error %d on load URL %s", request.status, request.url)
                 else:
-                    _LOGGER.debug("Galaxy Cloud Speak API send: %s", request.json())
-
+                    _LOGGER.debug("Galaxy Home Mini Serivce Speak()  send: %s", request.json())
 
         except (asyncio.TimeoutError, aiohttp.ClientError):
             _LOGGER.error("Timeout for Galaxy Home Mini speak() API")

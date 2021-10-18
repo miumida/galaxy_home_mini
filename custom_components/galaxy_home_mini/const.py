@@ -1,5 +1,5 @@
 DOMAIN = 'galaxy_home_mini'
-VERSION = '1.0.0'
+VERSION = '1.1.1'
 
 CONF_DEVICE_ID    = 'device_id'
 CONF_ACCESS_TOKEN = 'access_token'

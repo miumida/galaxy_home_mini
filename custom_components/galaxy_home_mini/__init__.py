@@ -94,7 +94,7 @@ async def async_setup_entry(hass, config_entry):
 
                 url = SMARTTHINGS_API_CALL_URL.format(device_id)
 
-                request = await websession.post(url, json=data, headers=hdr)
+                request = await session.post(url, json=data, headers=hdr)
 
                 if request.status != HTTP_OK:
                     _LOGGER.error( "Error %d on load URL %s", request.status, request.url)
@@ -133,7 +133,7 @@ async def async_setup_entry(hass, config_entry):
 
                 url = SMARTTHINGS_API_CALL_URL.format(device_id)
 
-                request = await websession.post(url, json=data, headers=hdr)
+                request = await session.post(url, json=data, headers=hdr)
 
                 if request.status != HTTP_OK:
                     _LOGGER.error(f"[{DOMAIN}] Error %d on load URL %s", request.status, request.url)

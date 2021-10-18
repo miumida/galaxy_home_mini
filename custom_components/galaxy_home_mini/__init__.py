@@ -11,6 +11,7 @@ import voluptuous as vol
 
 import homeassistant.loader as loader
 from homeassistant.const import (STATE_UNKNOWN, EVENT_STATE_CHANGED)
+from homeassistant.const import HTTP_OK
 import homeassistant.helpers.config_validation as cv
 from homeassistant import config_entries
 from homeassistant.helpers.aiohttp_client import async_get_clientsession

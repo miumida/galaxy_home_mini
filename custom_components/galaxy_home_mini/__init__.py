@@ -74,6 +74,11 @@ async def async_setup_entry(hass, config_entry):
     async def speak(service):
         message = service.data["message"]
 
+        other_device = None
+
+        if CONF_DEVICE_ID in service.data:
+            other_device = service.data[CONF_DEVICE_ID]
+
         if len(message) > 1000:
             message = 'Message max length is 1000.'
             _LOGGER.error(f'[{DOMAIN}] speak() Error, %s', message)
@@ -93,7 +98,8 @@ async def async_setup_entry(hass, config_entry):
                     ]
                 }
 
-                url = SMARTTHINGS_API_CALL_URL.format(device_id)
+                url = SMARTTHINGS_API_CALL_URL.format(device_id if other_device is None else other_device)
+
 
                 request = await session.post(url, json=data, headers=hdr)
 
@@ -111,6 +117,11 @@ async def async_setup_entry(hass, config_entry):
     # bixbi_command add service
     async def bixbi_command(service):
         message = service.data["message"]
+
+        other_device = None
+
+        if CONF_DEVICE_ID in service.data:
+            other_device = service.data[CONF_DEVICE_ID]
 
         if len(message) > 1000:
             message = 'Message max length is 1000.'
@@ -132,7 +143,7 @@ async def async_setup_entry(hass, config_entry):
                     ]
                 }
 
-                url = SMARTTHINGS_API_CALL_URL.format(device_id)
+                url = SMARTTHINGS_API_CALL_URL.format(device_id if other_device is None else other_device)
 
                 request = await session.post(url, json=data, headers=hdr)
 

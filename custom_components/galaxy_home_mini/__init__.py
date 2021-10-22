@@ -106,7 +106,7 @@ async def async_setup_entry(hass, config_entry):
                 if request.status != HTTP_OK:
                     _LOGGER.error( "Error %d on load URL %s", request.status, request.url)
                 else:
-                    _LOGGER.debug("Galaxy Home Mini Serivce Speak()  send: %s", request.json())
+                    _LOGGER.debug("Galaxy Home Mini Serivce Speak()  send: %s", await request.json())
 
         except (asyncio.TimeoutError, aiohttp.ClientError):
             _LOGGER.error("Timeout for Galaxy Home Mini speak() API")
@@ -150,7 +150,7 @@ async def async_setup_entry(hass, config_entry):
                 if request.status != HTTP_OK:
                     _LOGGER.error(f"[{DOMAIN}] Error %d on load URL %s", request.status, request.url)
                 else:
-                    _LOGGER.debug(f"[{DOMAIN}] Bixby Command API send: %s", request.json())
+                    _LOGGER.debug(f"[{DOMAIN}] Bixby Command API send: %s", await request.json())
 
 
         except (asyncio.TimeoutError, aiohttp.ClientError):

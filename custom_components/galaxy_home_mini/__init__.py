@@ -1,3 +1,4 @@
+from http import HTTPStatus
 import requests
 import logging
 import asyncio
@@ -11,7 +12,6 @@ import voluptuous as vol
 
 import homeassistant.loader as loader
 from homeassistant.const import (STATE_UNKNOWN, EVENT_STATE_CHANGED)
-from homeassistant.const import HTTP_OK
 import homeassistant.helpers.config_validation as cv
 from homeassistant import config_entries
 from homeassistant.helpers.aiohttp_client import async_get_clientsession
@@ -103,7 +103,7 @@ async def async_setup_entry(hass, config_entry):
 
                 request = await session.post(url, json=data, headers=hdr)
 
-                if request.status != HTTP_OK:
+                if request.status != HTTPStatus.OK:
                     _LOGGER.error( "Error %d on load URL %s", request.status, request.url)
                 else:
                     _LOGGER.debug("Galaxy Home Mini Serivce Speak()  send: %s", await request.json())
@@ -147,7 +147,7 @@ async def async_setup_entry(hass, config_entry):
 
                 request = await session.post(url, json=data, headers=hdr)
 
-                if request.status != HTTP_OK:
+                if request.status != HTTPStatus.OK:
                     _LOGGER.error(f"[{DOMAIN}] Error %d on load URL %s", request.status, request.url)
                 else:
                     _LOGGER.debug(f"[{DOMAIN}] Bixby Command API send: %s", await request.json())

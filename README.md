@@ -4,14 +4,10 @@
 ![HACS][hacs-shield]
 ![Version v1.1.6][version-shield]
 
-Smartthings API를 이용한 Galaxy Home mini Service for Homeassistant입니다.<br>
+Smartthings API를 이용한 Galaxy Home Mini Service for Homeassistant입니다.<br>
 Smartthings API token을 발급받아야 사용가능합니다. 갤럭시 홈 또는 갤럭시 홈 미니 디바이스도 필요합니다.<br>
 Speak는 TTS와는 다르며, cache 파일이 생성되지 않습니다. 네트워크가 끊어진 상태에서는 사용할 수 없습니다.<br>
 Bixbi Command가 추가되었습니다. Bixbi에게 명령을 전달할 수 있습니다.<br>
-
-- 개발자도구 > 서비스<br>
-![screenshot_1](https://github.com/miumida/galaxy_cloud_speak/blob/master/images/ha_dev_tool.png?raw=true)<br>
-message 길이는 최대 1000자 입니다.(한글 기준인지는 잘 모르겠습니다. Max Length 1000 이라고만 되어 있어서...)<br>
 
 <br>
 
@@ -51,6 +47,28 @@ message 길이는 최대 1000자 입니다.(한글 기준인지는 잘 모르겠
 
 ### Configuration(yaml) : Custom Integration으로 등록해주세요!
 - 통합구성요소만 지원합니다.<br>
+
+<br>
+
+## Supported Service
+- speak와 bixbi_command 두가지 서비스를 사용하실 수 있습니다.
+
+| service       | 내용 |
+| :-----------: | :---------: |
+| speak         | 갤럭시 홈 미니로 음성메세지를 전달합니다. |
+| bixbi_command | 빅스비를 호출합니다. |
+
+### service parameter
+| 파라미터       | 내용 |
+| :-----------: | :---------: |
+| message   | speak 또는 bixbi_command로 전송될 메세지 |
+| device_id | 통합구성요소로 등록한 장치 외의 갤럭시 홈 미니로 호출하기 위한 장치ID |
+
+### speak
+![service1](https://github.com/miumida/galaxy_home_mini/blob/master/images/service1.png?raw=true)<br>
+
+### bixbi_command
+![service2](https://github.com/miumida/galaxy_home_mini/blob/master/images/service2.png?raw=true)<br>
 
 <br>
 

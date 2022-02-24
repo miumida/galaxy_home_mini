@@ -7,6 +7,13 @@ speak:
     message:
       description: "Speak() 호출을 위한 message."
       example: "안녕하세요. 저는 갤럭시 홈 미니 입니다."
+      selector:
+        text:
+    device_id:
+      description: "다른 Galaxy Home Mini의 Device ID."
+      excample: "Galaxy Home Mini Device ID."
+      selector:
+        text:
 
 bixbi_command:
   description: Galaxy Home Mini bixbi_comand
@@ -14,3 +21,10 @@ bixbi_command:
     message:
       description: "빅스비 명령코맨트를 전달."
       example: "빅스비, 오늘 날씨 어때?"
+      selector:
+        text:
+    device_id:
+      description: "다른 Galaxy Home Mini의 Device ID."
+      excample: "Galaxy Home Mini Device ID."
+      selector:
+        text:
